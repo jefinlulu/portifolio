@@ -3,59 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Portfólio Escolar</title>
 </head>
 <body>
-
-<header>
-    <h1>Meu Portfólio</h1>
-    <nav>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
-
-<section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Olá! Sou um desenvolvedor apaixonado por criar soluções eficientes. Tenho experiência em várias tecnologias e adoro aprender novas habilidades.</p>
-</section>
-
-<section id="projetos">
-    <h2>Projetos</h2>
-    <div class="projetos-grid">
-        <div class="projeto">
-            <img src="img/Captura de tela_2024-09-23_08-19-21.png" alt="Projeto 1">
-            <h3>Agrinho</h3>
-            <p>Esse projeto do Agrinho se baseou no tema do campo a cidade, foi elaborado com imagens e um tema diversificado.</p>
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio Escolar</h1>
+            <p>Desenvolvedor Web | Aluno da Alura</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="projeto">
-            <img src="https://via.placeholder.com/300x200" alt="Projeto 2">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2. Tecnologias utilizadas: React, Node.js.</p>
-        </div>
-        <div class="projeto">
-            <img src="https://via.placeholder.com/300x200" alt="Projeto 3">
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto 3. Tecnologias utilizadas: Python, Django.</p>
-        </div>
-        <div class="projeto">
-            <img src="https://via.placeholder.com/300x200" alt="Projeto 4">
-            <h3>Projeto 4</h3>
-            <p>Descrição do projeto 4. Tecnologias utilizadas: Vue.js, Firebase.</p>
-        </div>
-    </div>
-</section>
+    </header>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Você pode me encontrar nas redes sociais ou enviar um e-mail para: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
-</section>
+    <section id="sobre" class="container">
+        <h2>Sobre Mim</h2>
+        <p>Sou um estudante do colégio estadual civico-militar basílio de lucca, atualmente cursando 2°ano do ensino médio, sou alguem que se interesa pelo ramo da tecnologia e preza pelo aprendizado, utilizo o alura em minhas aulas que são realiadas semanalmente.</p>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
-</footer>
+    <section id="projetos" class="container">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+            <div class="projeto">
+                <img src="img/Captura de tela_2024-09-23_08-19-21.png" alt="Projeto 1">
+                <h3>Projeto Agrinho: Do campo a cidade.</h3>
+                <p>esse projeto foi um dos mais recentes realizado por mim, com a proposta do campo a cidade feita pelo agrinho, esse projeto necesitou 2 horas e 20 minutos para ser realizado, elaborado com imagens e informações reais. <a href="#">Ver mais</a></p>
+            </div>
+            <div class="projeto">
+                <img src="img/Screenshot 2024-09-30 at 08-27-3.png" alt="Projeto 2">
+                <h3>Projeto Biblioteca de livro.</h3>
+                <p>Esse site foi criado no intuito de fazer uma biblioteca que suporte varios livros para possibilitar que quem acesse possa ler todos os titulos disponiveis, esse site teve um trabalho um pouco maior que o esperado e precisou de 3 horas para ser finalizado. <a href="#">Ver mais</a></p>
+            </div>
+            <div class="projeto">
+                <img src="projeto3.jpg" alt="Projeto 3">
+                <h3>Projeto 3: Portfólio Interativo</h3>
+                <p>Um portfólio dinâmico com animações. <a href="#">Ver mais</a></p>
+            </div>
+            <div class="projeto">
+                <img src="projeto4.jpg" alt="Projeto 4">
+                <h3>Projeto 4: Blog de Tecnologia</h3>
+                <p>Um blog para compartilhar conhecimento sobre tecnologia. <a href="#">Ver mais</a></p>
+            </div>
+        </div>
+    </section>
 
+    <section id="contato" class="container">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
